@@ -1,0 +1,183 @@
+@use '_variables1';
+@use '_variables2';
+body {
+  margin: 0; }
+
+.header {
+  height: 800px;
+  width: 100%;
+  background: url(../img/0.jpg);
+  border-radius: 0 50% 50% 0; }
+  .header .navigation {
+    padding: 50px 0 0 30px;
+    width: 800px;
+    color: #c1d1df;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px; }
+    .header .navigation .cz-rep {
+      position: relative;
+      bottom: 10px; }
+  .header .header-content {
+    display: flex;
+    width: 800px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 0 0 320px; }
+  .header .text {
+    color: #ddd;
+    text-align: center;
+    line-height: 1.5em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px; }
+  .header .header-btn {
+    background-color: transparent;
+    color: gray;
+    border: 1px solid gray;
+    width: 130px;
+    height: 50px; }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .main .main-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    width: 600px; }
+  .main .main-section {
+    display: flex;
+    width: 1000px;
+    box-shadow: 0 0 10px gray;
+    margin-bottom: 40px; }
+  .main .container-img {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-shrink: 0; }
+  .main .img1 {
+    background: url(../img/1.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%; }
+  .main .img2 {
+    background: url(../img/2.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%; }
+  .main .img3 {
+    background: url(../img/3.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%; }
+  .main .content {
+    padding: 20px; }
+    .main .content .section-title {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 40px;
+      margin: 0;
+      text-align: center;
+      font-weight: 400;
+      color: #8695a2; }
+    .main .content .description {
+      color: #395369; }
+  .main .reviews {
+    background-color: #8d6f79;
+    width: 80vw;
+    display: grid;
+    padding: 1vw; }
+    .main .reviews .reviews-title {
+      color: #cba2b0;
+      margin: 1vw;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 30px;
+      font-weight: 400;
+      text-align: center; }
+    .main .reviews .reviews-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 1vw; }
+      .main .reviews .reviews-content .review {
+        background-color: #cba2b0;
+        padding: 1vh;
+        display: grid;
+        grid-template-columns: 1fr 3fr; }
+        .main .reviews .reviews-content .review img {
+          width: 80px;
+          height: auto;
+          border-radius: 50%; }
+        .main .reviews .reviews-content .review div {
+          display: grid;
+          padding: 0 2vh;
+          align-content: center;
+          color: white; }
+        .main .reviews .reviews-content .review span {
+          font-style: italic; }
+  .main .find-form {
+    background-color: #8695a2;
+    margin-top: 30px;
+    width: 50vw;
+    padding: 1vw; }
+    .main .find-form h2 {
+      color: #c1d1df;
+      font-size: 2em;
+      text-align: center;
+      font-weight: 400;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 30px; }
+    .main .find-form form {
+      display: grid;
+      grid-column-gap: .5vw;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-items: center; }
+      .main .find-form form .find-form__input {
+        border: 0;
+        border-radius: 0;
+        background-color: #8695a2;
+        border-bottom: 1px solid #5e6872;
+        color: #5e6872; }
+
+footer {
+  background-color: #3d5585;
+  height: 100%;
+  width: auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-left: 20px; }
+  footer section {
+    margin-right: 20px; }
+    footer section h3 {
+      color: #659afe;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px; }
+    footer section .media img {
+      width: 30px;
+      height: 30px;
+      padding-right: 10px; }
+    footer section .text {
+      color: #0a275e;
+      margin-top: 30px; }
+    footer section .list {
+      list-style: none;
+      padding-left: 20px;
+      color: #659afe; }
+    footer section .form-title {
+      color: black;
+      font-weight: 700; }
+    footer section form input, footer section form button {
+      width: 100%;
+      padding: 10px 0 10px 0;
+      border: none; }
+    footer section form button {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #0a275e;
+      color: white; }
+    footer section .payment img {
+      width: 50px;
+      padding-right: 10px; }
